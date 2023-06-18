@@ -1,0 +1,18 @@
+on:
+    workflow_dispatch:
+
+jobs:
+    hello:
+      steps:
+      - uses: actions/checkout@v2
+
+      - name: Say hello
+        run: echo Hello
+
+    goodbye:
+      needs: hello
+       steps:
+        - uses: actions/checkout@v2
+
+        - name: Say goodbye
+          run: echo Goodbye
