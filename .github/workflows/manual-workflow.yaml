@@ -10,6 +10,9 @@ jobs:
       - name: Say hello
         run: echo Hello
 
+      - name: Say something
+        run: echo Something
+
   goodbye:
     runs-on: ubuntu-latest
     needs: hello
